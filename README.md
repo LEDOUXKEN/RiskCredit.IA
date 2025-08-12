@@ -1,90 +1,47 @@
-# 🏦 Système de Détection du Risque de Crédit
+# Crédit Risk Analyzer Premium
 
-## 📋 Description
-Application Streamlit d'analyse prédictive du risque de défaut de paiement utilisant l'Intelligence Artificielle.
+## Description
+Application avancée d’analyse du risque de crédit et de simulation de remboursement, développée en Python avec Streamlit et Jupyter Notebook. Elle propose des visualisations interactives, des analyses métier, des recommandations personnalisées et une interface moderne.
 
-**Développé par :** Fidèle Ledoux  
-**Formation :** IA School - Intelligence Artificielle & Data Science  
+## Fonctionnalités principales
+- Analyse prédictive du risque de crédit
+- Visualisations avancées (matrices, distributions, corrélations, etc.)
+- Simulateur de remboursement détaillé
+- Recommandations et conseils d’optimisation
+- Sécurité par code d’accès (KEN2025)
+- Documentation claire et commentaires professionnels
 
-## 🚀 Fonctionnalités
+## Installation
+1. Installez Python 3.8 ou plus récent
+2. Installez les dépendances avec :
+   ```bash
+   pip install -r requirements.txt
+   ```
+   (ou installez manuellement : streamlit, pandas, numpy, scikit-learn, joblib, matplotlib, seaborn, jsonschema)
 
-### 🤖 Analyse IA
-- Modèle Decision Tree avec 88.9% de précision
-- Preprocessing automatique des données
-- Prédiction en temps réel du risque de défaut
-
-### 💰 Simulateur de Remboursement
-- Calcul des mensualités
-- Tableau d'amortissement
-- Coût total et intérêts
-- Durée personnalisable (1-30 ans)
-
-### 📊 Visualisations
-- Score de risque interactif
-- Analyse des facteurs de risque
-- Graphiques Plotly dynamiques
-
-### 💡 Interface Intuitive
-- Motifs de crédit avec emojis
-- Métriques en temps réel
-- Design bancaire professionnel
-
-## 🛠️ Technologies Utilisées
-- **Streamlit** - Framework web
-- **Scikit-learn** - Machine Learning
-- **Plotly** - Visualisations interactives
-- **Pandas** - Manipulation de données
-- **NumPy** - Calculs numériques
-
-## 📊 Performance du Modèle
-- **Précision :** 88.9%
-- **Rappel :** 76.8%
-- **Score F1 :** 75.4%
-- **AUC-ROC :** 84.5%
-
-## 📁 Structure du Projet
-```
-├── apps.py                    # Application Streamlit principale
-├── requirements.txt           # Dépendances Python
-├── tree_model.pkl            # Modèle ML entraîné
-├── credit_risk_dataset.csv   # Dataset d'entraînement
-├── Prediction.ipynb          # Notebook d'analyse
-└── README.md                 # Documentation
-```
-
-## 🚀 Déploiement
-
-### En local :
+## Lancement de l’application Streamlit
 ```bash
-pip install -r requirements.txt
-streamlit run apps.py
+streamlit run apps_premium.py
 ```
 
-### Sur Streamlit Cloud :
-1. Fork ce repository
-2. Connectez-vous sur [share.streamlit.io](https://share.streamlit.io)
-3. Déployez avec `apps.py` comme fichier principal
+## Utilisation du notebook
+- Ouvrez `Prediction.ipynb` ou `CreditPredict.ipynb` dans Jupyter ou VS Code
+- Exécutez les cellules pour explorer les analyses et visualisations
+- Consultez les commentaires markdown pour l’interprétation métier
 
-## 📈 Dataset
-- **Source :** Données de crédit synthétiques
-- **Taille :** 32,583 observations
-- **Variables :** 11 prédicteurs principaux
-- **Cible :** Risque de défaut binaire
+## Fichiers du projet
+- `apps_premium.py` : application Streamlit principale
+- `Prediction.ipynb` : notebook d’analyse et visualisations
+- `CreditPredict.ipynb` : notebook complémentaire
+- `credit_risk_dataset.csv` : jeu de données d’exemple
+- `tree_model.pkl` : modèle IA (optionnel)
+- `requirements.txt` : dépendances Python
 
-## 🎯 Variables Prédictives
-- Âge du demandeur
-- Revenu annuel
-- Statut de propriété
-- Ancienneté emploi
-- Motif du prêt
-- Grade du prêt
-- Montant et taux d'intérêt
-- Historique de crédit
+## Sécurité
+L’accès à l’application Streamlit est protégé par le code : **KEN2025**
 
-## 📞 Contact
-**Fidèle Ledoux**  
-Étudiant IA School  
-Spécialisation : Data Science & Machine Learning
+## Auteur
+Fidèle Ledoux – IA School
 
 ---
-🏅 **Projet Académique Premium** - Solution Bancaire Intelligente
+Pour toute amélioration ou question, contactez le développeur ou modifiez les fichiers du projet.
